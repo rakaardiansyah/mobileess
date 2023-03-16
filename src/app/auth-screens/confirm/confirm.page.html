@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true" class="ion-no-padding">
+
+    <div class="icon ion-text-center">
+        <img src="../../../assets/image/logo-confirm.png">
+    </div>
+
+    <div class="padding">
+        <div class="title">
+            <ion-col class="title">
+                <ion-row class="ion-justify-content-start">
+                    <ion-label class="lbl-1">Periksa email anda</ion-label>
+                </ion-row>
+                <ion-row class="ion-justify-content-start">
+                <ion-label class="lbl-2">
+                    Kami telah mengirimkan instruksi pemulihan kata sandi ke email Anda
+                </ion-label>
+                </ion-row>
+            </ion-col>
+        </div>
+
+        <div class="footer">
+            <ion-button
+                expand="block"
+                color="primary"
+                (click)="onOpen()">
+                <ion-label>Open Email App</ion-label>
+            </ion-button>
+            <p class="lbl-3 ion-text-center">
+                <ion-label><b (click)="onSkip()">Lewati </b>, nanti saya konfirmasi</ion-label>
+            </p>
+            <p class="lbl-4 ion-text-center">
+                <ion-label>Tidak menerima email? Periksa filter spam Anda, atau <b (click)="onOther()">coba alamat email lain</b></ion-label>
+            </p>
+        </div>
+    </div>
+
+</ion-content>

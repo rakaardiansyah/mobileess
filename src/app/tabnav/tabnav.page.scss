@@ -1,0 +1,26 @@
+ion-tab-bar {
+  position: relative;
+  --background: #FAFAFA;
+  height: 68px;
+
+  ion-tab-button {
+    --color: #C4C5C5;
+    --color-selected: var(--ion-color-light);
+
+    .box {
+      width: 70px;
+      height: 50px;
+      border-radius: 10px;
+      position: absolute;
+      ion-icon {
+        width: 20px;
+        height: 20px;
+        padding-top: 8px;
+      }
+      ion-label {
+        display: grid;
+        font-size: 11px;
+      }
+    }
+  }
+}

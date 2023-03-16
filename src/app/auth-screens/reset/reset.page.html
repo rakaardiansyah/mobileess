@@ -1,0 +1,105 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-fab-button size="small" color="light" routerLink="/login">
+        <ion-icon name="chevron-back-outline" color="primary"></ion-icon>
+      </ion-fab-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="logo">
+        <!-- <img src="../../assets/image/home-header.png"> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="icon">
+        <img src="../../../assets/image/logo-reset.png">
+    </div>
+
+  <div class="padding">
+      <div class="title">
+          <ion-col>
+              <ion-row class="ion-justify-content-start">
+                  <ion-label class="lbl-1">Buat Password Baru</ion-label>
+              </ion-row>
+              <ion-row class="ion-justify-content-start">
+                  <ion-label class="lbl-2">Kata sandi baru Anda harus berbeda dari sebelum-nya kata sandi yang digunakan.</ion-label>
+              </ion-row>
+          </ion-col>
+      </div>
+
+      <form [formGroup]="form">
+          <div class="ion-margin-vertical">
+              <ion-item lines="none">
+                  <ion-icon
+                      name="lock-closed"
+                      slot="start">
+                  </ion-icon>
+                  <ion-icon
+                      [name]="type ? 'eye' : 'eye-off'"
+                      slot="end"
+                      (click)="changeType()">
+                  </ion-icon>
+                  <ion-input formControlName="password" [type]="type ? 'password' : 'text'"
+                      placeholder="Password">
+                  </ion-input>
+              </ion-item>
+              <ion-text
+                  color="danger"
+                  *ngIf="!form.get('password')?.valid && form.get('password')?.touched">
+                  <ion-text
+                  class="error"
+                  *ngIf="form.get('password')?.hasError('required')">
+                  * Please enter your password
+                  </ion-text>
+                  <ion-text
+                  class="error"
+                  *ngIf="!form.get('password')?.hasError('required') && form.get('password')?.hasError('minlength')">
+                  * Harus minimal 8 karakter, huruf besar, dan angka.
+                  </ion-text>
+              </ion-text>
+          </div>
+
+          <div class="ion-margin-vertical">
+            <ion-item lines="none">
+                <ion-icon
+                    name="lock-closed"
+                    slot="start">
+                </ion-icon>
+                <ion-icon
+                    [name]="type ? 'eye' : 'eye-off'"
+                    slot="end"
+                    (click)="changeType()">
+                </ion-icon>
+                <ion-input formControlName="confirm_password" [type]="type ? 'password' : 'text'"
+                    placeholder="Confirm Password">
+                </ion-input>
+            </ion-item>
+            <ion-text
+                color="danger"
+                *ngIf="!form.get('confirm_password')?.valid && form.get('confirm_password')?.touched">
+                <ion-text
+                class="error"
+                *ngIf="form.get('confirm_password')?.hasError('required')">
+                * Please enter your confirm password
+                </ion-text>
+                <ion-text
+                class="error"
+                *ngIf="!form.get('confirm_password')?.hasError('required') && form.get('confirm_password')?.hasError('minlength')">
+                * Kedua kata sandi harus cocok.
+                </ion-text>
+            </ion-text>
+          </div>
+      </form>
+
+      <div class="footer">
+          <ion-button
+              expand="block"
+              color="primary"
+              (click)="onReset()">
+              <ion-label>Reset Password</ion-label>
+          </ion-button>
+      </div>
+  </div>
+
+</ion-content>

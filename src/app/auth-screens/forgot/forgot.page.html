@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-fab-button size="small" color="light" routerLink="/login">
+        <ion-icon name="chevron-back-outline" color="primary"></ion-icon>
+      </ion-fab-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="logo">
+        <!-- <img src="../../assets/image/home-header.png"> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="icon">
+      <img src="../../../assets/image/logo-forgot.png">
+  </div>
+
+  <div class="padding">
+      <div class="title">
+          <ion-col>
+              <ion-row class="ion-justify-content-start">
+                  <ion-label class="lbl-1">Lupa kata sandi?</ion-label>
+              </ion-row>
+              <ion-row class="ion-justify-content-start">
+                <ion-label class="lbl-2">
+                    Masukkan email Anda yang terkait dengan akun Anda, dan kami akan
+                    mengirimkan email instruksi untuk mengatur ulang kata sandi Anda.
+                </ion-label>
+              </ion-row>
+          </ion-col>
+      </div>
+
+      <form [formGroup]="form">
+          <div class="ion-margin-vertical">
+              <ion-item lines="none">
+                  <ion-icon
+                      name="mail"
+                      slot="start">
+                  </ion-icon>
+                  <ion-input formControlName="email" type="text" placeholder="Email"></ion-input>
+              </ion-item>
+              <ion-text
+                  color="danger"
+                  *ngIf="!form.get('email')?.valid && form.get('email')?.touched">
+                  <ion-text
+                  class="error"
+                  *ngIf="form.get('email')?.hasError('required')">
+                  * Please enter email
+                  </ion-text>
+              </ion-text>
+          </div>
+      </form>
+
+      <div class="footer">
+          <ion-button
+              expand="block"
+              color="primary"
+              (click)="onReset()">
+              <ion-label>Reset Password</ion-label>
+          </ion-button>
+      </div>
+  </div>
+</ion-content>

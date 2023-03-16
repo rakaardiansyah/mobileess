@@ -1,0 +1,103 @@
+ion-header{
+    ion-toolbar {
+        --background: #FAF9F9;
+    }
+    ion-fab-button {
+        --border-radius: 10px;
+        --box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3), 0px 1px 3px 1px rgba(0,0,0,.15);
+        --color: black;
+    }
+    .logo {
+        padding-right: 6px;
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+ion-content {
+    position: absolute;
+    background-color: white;
+    ion-label {
+        color: var(--ion-color-primary);
+    }
+    ion-icon {
+        color:#C4C5C5;
+        margin-right: 10px;
+    }
+    ion-input, ion-text {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    ion-item {
+        --background: #ECECEC;
+        border-style: none;
+        border-radius: 12px;
+        height: 50px;
+    }
+    ion-button {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 48px;
+        --border-radius: 25px;
+
+        ion-label {
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+
+    .header {
+        position: relative;
+        img {
+            width: 100%;
+            max-height: 236px;
+        }
+        padding-bottom: 0px;
+    }
+
+    .icon {
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 100%;
+            max-height: 165px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .padding {
+        padding-top: 260px;
+        padding-left: 40px;
+        padding-right: 40px;
+        .title{
+            .lbl-1 {
+                font-weight: 500;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+            .lbl-2 {
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .error {
+        font-size: 0.7rem !important;
+    }
+
+    .footer {
+        position:relative;
+        ion-button{
+            margin: 30px 10px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import 'swiper/swiper-bundle.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@400;500;700&display=swap');
+
+* {    
+    font-family: 'Roboto', sans-serif;    
+}
+
+.custom-ripple {
+    color: var(--ion-color-primary);
+}
+
+xion-modal {    
+    --border-radius: 20px 20px 0px 0px;
+    --backdrop-opacity: 1;
+    backdrop-filter: blur(1px);
+
+    &::part(backdrop) {
+        background: transparent;
+    }
+
+    &::part(handle) {
+        background: var(--ion-color-primary);
+        width: 102px;
+        height: 6px;
+        margin-top: 10px;        
+    }
+
+    &::part(content) {                
+        box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 20%);        
+    }
+}
