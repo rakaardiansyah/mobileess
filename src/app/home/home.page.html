@@ -1,70 +1,85 @@
 <ion-content [fullscreen]="true" scrollEvents="true" (ionScroll)='onContentScroll($event)'>
-  <div class="header">
-    <ion-card class="ic1">
+  
+  <div class="header">  
+    <div class="profile">
       <ion-row class="ion-align-items-center">
-        <ion-col size="2" class="ion-text-left">
+        <ion-col size="3" class="ion-text-left">
           <img src="../../assets/icon/user.png">
         </ion-col>
-        <ion-col size="10" class="ion-text-left">
+        <ion-col size="9" class="ion-text-left">
           <ion-row>
-            <ion-label class="lbl-3">Assalamualaikum,</ion-label>
+            <ion-label class="lbl-1">Halo,</ion-label>
           </ion-row>
           <ion-row>
-            <ion-label class="lbl-4">Raka Ardiansyah</ion-label>
+            <ion-label class="lbl-2">Raka Ardiansyah</ion-label>
+          </ion-row>
+          <ion-row>
+            <ion-label class="lbl-2">K127829938</ion-label>
           </ion-row>
         </ion-col>
       </ion-row>
-    </ion-card>
+    </div>
   </div>
 
-  <!-- <div class="swp1">
-    <swiper #swp1 [config]="swpc1">
-      <ng-template swiperSlide *ngFor="let item of data1">
-        <ion-row class="ion-justify-content-center">
-          <ion-button class="tombol" color="white" (click)="onClick(item.id)">
-            <img src="{{item?.icon}}">
-          </ion-button>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-label class="nama ion-text-center">{{item?.nama}}</ion-label>
-        </ion-row>
-      </ng-template>
-    </swiper>
-  </div> -->
-
-  <!-- <div class="list-berita">
-    <ion-row>
-      <ion-col class="ion-text-left">
-        <ion-label class="judul">Info Terbaru</ion-label>
-      </ion-col>
-      <ion-col class="ion-text-right">
-        <ion-label class="sub-judul">
-          <a target="_blank">Lihat semua</a>
-        </ion-label>
-      </ion-col>
-    </ion-row>
-    <ion-card class="ion-activatable ripple-parent berita" (click)="onBeritaClick()" *ngFor="let item of data2">
-      <ion-ripple-effect class="custom-ripple"></ion-ripple-effect>
-      <ion-row>
-        <ion-col size="5">
-          <img src="{{item?.image}}">
+  <ion-card class="clockinout">
+    <div class="attendance">
+      <ion-label class="keterangan1">You haven't clock in today!</ion-label> 
+      <ion-row class="ion-align-items-center">  
+        <ion-col size="6" class="ion-text-center">
+          <ion-button class="clockin" color="text-primary">
+            Clock In                 
+          </ion-button>    
         </ion-col>
-        <ion-col size="7">
-          <ion-card-content>
-            <ion-row class="ion-justify-content-start">
-              <ion-label class="waktu">Senin, 19 Desember 2022</ion-label>
-            </ion-row>
-            <ion-row class="ion-justify-content-start">
-              <ion-label class="judul">Judul</ion-label>
-            </ion-row>
-            <ion-row class="ion-justify-content-start">
-              <ion-label class="konten">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id morbi feugiat dictum diam. Platea maecenas quis cursus purus donec id. Dignissim mi etiam quisque aliquet dolor eget ipsum id. Blandit in lorem mattis elit amet, morbi.</ion-label>
-            </ion-row>
-          </ion-card-content>
+        <ion-col size="6" class="ion-text-center">
+          <ion-button class="clockout" color="text-primary">
+            Clock Out              
+          </ion-button>  
         </ion-col>
       </ion-row>
-    </ion-card>
-  </div> -->
+    </div>
+  </ion-card>
 
+
+  <ion-card class="overview">
+    <div class="ketoverview">
+      <ion-label class="ket1">Attendance Overview (11 Maret 2023)</ion-label> 
+      <ion-row class="overview">  
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="card-overview">
+            <ion-label class="lbl1">24</ion-label> 
+            <ion-row class="ion-justify-content-center">
+              <ion-label class="lbl2">Present</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="card-overview">
+            <ion-label class="lbl1">2</ion-label> 
+            <ion-row class="ion-justify-content-center">
+              <ion-label class="lbl2">Half Day</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="card-overview">
+            <ion-label class="lbl1">1</ion-label> 
+            <ion-row class="ion-justify-content-center">
+              <ion-icon name="time-outline"></ion-icon>
+              <ion-label class="lbl2">Late</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="card-overview">
+            <ion-label class="lbl1">4</ion-label> 
+            <ion-row class="ion-justify-content-center">
+              <ion-label class="lbl2">Overtime</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+
+  </ion-card>
 
 </ion-content>

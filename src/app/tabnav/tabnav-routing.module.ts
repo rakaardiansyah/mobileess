@@ -27,11 +27,6 @@ const routes: Routes = [
       {
         path: 'account',
         loadChildren: () => import('../account/account.module').then( m => m.AccountPageModule)
-      },
-      {
-        path: '',
-        redirectTo: '/tabnav/home',
-        pathMatch: 'full'
       }
     ]
   },

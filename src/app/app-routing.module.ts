@@ -31,22 +31,6 @@ const routes: Routes = [
     path: 'tabnav',
     loadChildren: () => import('./tabnav/tabnav.module').then( m => m.TabnavPageModule)
   },
-  // {
-  //   path: 'request',
-  //   loadChildren: () => import('./request/request.module').then( m => m.RequestPageModule)
-  // },
-  // {
-  //   path: 'log-book',
-  //   loadChildren: () => import('./log-book/log-book.module').then( m => m.LogBookPageModule)
-  // },
-  // {
-  //   path: 'transaction',
-  //   loadChildren: () => import('./transaction/transaction.module').then( m => m.TransactionPageModule)
-  // },
-  // {
-  //   path: 'account',
-  //   loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
-  // },
 ];
 
 @NgModule({

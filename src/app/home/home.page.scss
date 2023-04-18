@@ -1,0 +1,221 @@
+ion-img{
+    width: 90%;
+    height: 90%;
+}
+
+ion-icon{
+    width: 45px;
+    height: 45px;
+    color: #ffffff;
+}
+
+h1{
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+h2{
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+h3{
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+h4{
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+h5{
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+h6{
+    font-size: 3 rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+ion-title {
+    font-size: 18px;
+    justify-content: center;
+    display: flex
+}
+
+ion-img {
+    width: 110px;
+    height: 110px;
+    margin: 2px;
+}
+
+ion-card {
+    border-radius: 20px;
+}
+
+ion-card-title{
+    font-weight: bold;
+    justify-content: left;
+    display: flex
+}
+
+ion-card-subtitle{
+    justify-content: left;
+    display: flex
+}
+
+ion-label{
+    margin-left: 0;
+}
+
+ion-chip {
+    margin-left: 0;
+}
+
+ion-icon {
+    font-size: 30px;
+    position: relative;
+    margin-right: 10px;
+}
+
+ion-content {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3F66AB;      
+    
+    .header {
+      padding: 27px;
+      padding-bottom: 0px;
+
+      .profile {
+          padding: 10px;
+          margin: 0;
+          border-radius: 20px;
+          
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .lbl-1 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--ion-color-primary);
+        }
+        .lbl-2 {
+            font-size: 14px;
+            color: var(--ion-color-primary);
+        }
+      }
+    }  
+    
+    .clockinout {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--ion-color-primary);
+
+        .attendance {
+            margin: 10px;
+            border-radius: 20px;
+
+            .keterangan1 {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: 700;
+                color: white;
+            }
+
+            ion-row {
+                margin: 5px 0px;
+                
+                .clockin {
+                    width: 100%;
+                    border-radius: 5px;
+                    background-color: #3163B9;
+                }
+    
+               .clockout {
+                    width: 100%;
+                    border-radius: 5px;
+                    color: var(--ion-color-primary);
+                    background-color: #c1d0ea;
+                }            
+            }
+        }
+    }
+
+    .overview {
+        height: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 15px 15px 0px 0px;
+        background-color: var(--ion-color-primary);
+
+        .ketoverview {
+            margin: 20px 10px 10px 10px;
+            border-radius: 20px;
+
+            .ket1 {
+                font-size: 14px;
+                margin: 15px 15px ;
+                font-weight: 700;
+                color: white;
+            }
+
+            ion-row {
+                margin: 5px 0px;
+
+                ion-col {
+                    justify-content: center;
+                    text-align: center;
+                    padding: 0px;
+                
+                    .card-overview {
+                        border-radius: 7px;
+                        
+                        .lbl1 {
+                            font-size: 20px;
+                            margin-top: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-weight: 700;
+                            color: #123167;
+                        }   
+
+                        ion-row{
+                            margin: 4px 15px;
+    
+                            ion-icon{
+                                font-size: 5px;
+                                color: #123167;
+                            }
+    
+                            .lbl2 {
+                                font-size: 10px;
+                                margin: 7px 0px;
+                                font-weight: 200;
+                                color: #123167;
+                            }
+                     
+                        }
+
+    
+                        
+                    }
+                }
+                           
+            }
+        }
+    }
+    
+}
