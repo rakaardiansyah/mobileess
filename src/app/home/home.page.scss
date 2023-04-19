@@ -3,46 +3,47 @@ ion-img{
     height: 90%;
 }
 
-ion-icon{
-    width: 45px;
-    height: 45px;
-    color: #ffffff;
-}
+// ion-icon{
+//     width: 45px;
+//     height: 45px;
+//     position: relative;
+//     color: #123167;
+// }
 
 h1{
     font-weight: 400;
-    color: #ffffff;
+    color: var(--ion-color-primary);
     margin: 0;
 }
 
 h2{
     font-weight: 400;
-    color: #ffffff;
+    color: var(--ion-color-primary);
     margin: 0;
 }
 
 h3{
     font-weight: 400;
-    color: #ffffff;
+    color: var(--ion-color-primary);
     margin: 0;
 }
 
 h4{
     font-weight: 400;
-    color: #ffffff;
+    color: var(--ion-color-primary);
     margin: 0;
 }
 
 h5{
     font-weight: 400;
-    color: #ffffff;
+    color: var(--ion-color-primary);
     margin: 0;
 }
 
 h6{
     font-size: 3 rem;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--ion-color-primary);
     margin: 0;
 }
 
@@ -58,22 +59,23 @@ ion-img {
     margin: 2px;
 }
 
-ion-card {
-    border-radius: 20px;
-}
+// ion-card {
+//     border-radius: 20px;
+// }
 
-ion-card-title{
-    font-weight: bold;
-    justify-content: left;
-    display: flex
-}
+// ion-card-title{
+//     font-weight: bold;
+//     justify-content: left;
+//     display: flex
+// }
 
-ion-card-subtitle{
-    justify-content: left;
-    display: flex
-}
+// ion-card-subtitle{
+//     justify-content: left;
+//     display: flex
+// }
 
 ion-label{
+    color: var(--ion-color-primary);
     margin-left: 0;
 }
 
@@ -81,40 +83,48 @@ ion-chip {
     margin-left: 0;
 }
 
-ion-icon {
-    font-size: 30px;
-    position: relative;
-    margin-right: 10px;
-}
 
 ion-content {
     font-family: 'Roboto', sans-serif;
-    background-color: #3F66AB;      
     
     .header {
-      padding: 27px;
-      padding-bottom: 0px;
+        padding: 20px;
+        text-align: center;  
+        margin-top: -15px;
+        margin-bottom: -17px;
+        // background-color: #3F66AB;
+        // justify-content: center;
+        // align-items: center; 
+        // display: flex;
 
-      .profile {
-          padding: 10px;
-          margin: 0;
-          border-radius: 20px;
-          
-        img {
-            width: 60px;
-            height: 60px;
+        .profile {
+            padding: 10px;
+            margin: 0;
+            border-radius: 20px;
+            
+            img {
+                width: 60px;
+                height: 60px;
+            }  
+
+            .lbl-1 {
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--ion-color-primary);
+            }
+            
+            .lbl-2 {
+                font-size: 14px;
+                color: var(--ion-color-primary);
+            }
+            
+            .lbl-3 {
+                font-size: 14px;
+                color: var(--ion-color-primary);
+            }
+
         }
-        
-        .lbl-1 {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--ion-color-primary);
-        }
-        .lbl-2 {
-            font-size: 14px;
-            color: var(--ion-color-primary);
-        }
-      }
+
     }  
     
     .clockinout {
@@ -123,7 +133,7 @@ ion-content {
         background-color: var(--ion-color-primary);
 
         .attendance {
-            margin: 10px;
+            margin-top: 10px;
             border-radius: 20px;
 
             .keterangan1 {
@@ -154,19 +164,19 @@ ion-content {
     }
 
     .overview {
-        height: 100%;
         margin-left: 0px;
         margin-right: 0px;
-        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 0px;
+        border-radius: 20px 20px 0px 0px;
         background-color: var(--ion-color-primary);
 
         .ketoverview {
-            margin: 20px 10px 10px 10px;
+            margin: 20px 10px;
             border-radius: 20px;
 
             .ket1 {
                 font-size: 14px;
-                margin: 15px 15px ;
+                margin: 15px 15px;
                 font-weight: 700;
                 color: white;
             }
@@ -179,11 +189,12 @@ ion-content {
                     text-align: center;
                     padding: 0px;
                 
-                    .card-overview {
-                        border-radius: 7px;
+                    .overview-present {
+                        border-radius: 5px;
+                        margin-inline:5px;
                         
-                        .lbl1 {
-                            font-size: 20px;
+                        .lblpresent1 {
+                            font-size: 30px;
                             margin-top: 12px;
                             display: flex;
                             flex-direction: column;
@@ -192,30 +203,213 @@ ion-content {
                             color: #123167;
                         }   
 
-                        ion-row{
-                            margin: 4px 15px;
+                        ion-row {
+                            margin: 5px;
+                            justify-content: center;
+                            align-items: center; 
+                            text-align: center;   
+                            display: flex;
     
-                            ion-icon{
-                                font-size: 5px;
-                                color: #123167;
-                            }
-    
-                            .lbl2 {
+                            ion-icon {  
+                                font-size: 0.9rem;
+                                margin-bottom: 2px;
+                                color: #123167;                 
+                            }     
+
+                            .lblpresent2 {
                                 font-size: 10px;
-                                margin: 7px 0px;
+                                margin-left: 2px;
                                 font-weight: 200;
                                 color: #123167;
                             }
                      
                         }
 
-    
-                        
                     }
+
+                    .overview-halfday {
+                        border-radius: 5px;
+                        margin-inline:5px; 
+
+                        .lblhalfday1 {
+                            font-size: 30px;
+                            margin-top: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-weight: 700;
+                            color: #FF8A00;
+                        }
+
+                        ion-row {
+                            margin: 5px;
+                            justify-content: center;
+                            align-items: center; 
+                            text-align: center;   
+                            display: flex;
+    
+                            ion-icon {  
+                                font-size: 0.9rem;
+                                margin-bottom: 2px;
+                                color: #FF8A00;                 
+                            }     
+
+                            .lblhalfday2 {
+                                font-size: 10px;
+                                margin-left: 2px;
+                                font-weight: 200;
+                                color: #FF8A00;
+                            }
+                     
+                        }
+
+                    }
+
+                    .overview-late {
+                        border-radius: 5px;
+                        margin-inline:5px; 
+
+                        .lbllate1 {
+                            font-size: 30px;
+                            margin-top: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-weight: 700;
+                            color: #E10010;
+                        }
+
+                        ion-row {
+                            margin: 5px;
+                            justify-content: center;
+                            align-items: center; 
+                            text-align: center;   
+                            display: flex;
+    
+                            ion-icon {  
+                                font-size: 0.9rem;
+                                margin-bottom: 2px;
+                                color: #E10010;                 
+                            }     
+
+                            .lbllate2 {
+                                font-size: 10px;
+                                margin-left: 2px;
+                                font-weight: 200;
+                                color: #E10010;
+                            }
+                     
+                        }
+
+                    }
+
+                    .overview-overtime {
+                        border-radius: 5px;
+                        margin-inline:5px; 
+
+                        .lblovertime1 {
+                            font-size: 30px;
+                            margin-top: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-weight: 700;
+                            color: #1D9FC9;
+                        }
+
+                        ion-row {
+                            margin: 5px;
+                            justify-content: center;
+                            align-items: center; 
+                            text-align: center;   
+                            display: flex;
+    
+                            ion-icon {  
+                                font-size: 0.9rem;
+                                margin-bottom: 2px;
+                                color: #1D9FC9;                 
+                            }     
+
+                            .lblovertime2 {
+                                font-size: 10px;
+                                margin-left: 2px;
+                                font-weight: 200;
+                                color: #1D9FC9;
+                            }
+                
+                        }
+
+                    }
+
                 }
                            
             }
         }
     }
     
+    .menus {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: -17px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: white;
+
+        .menu-all {
+            margin: 20px 10px;
+            border-radius: 20px;
+
+            .menuket {
+                font-size: 18px;
+                margin: 15px 15px;
+                font-weight: 700;
+                color: var(--ion-color-primary);
+            }
+
+            ion-row {
+                margin: 3px 0px;
+
+                ion-col {
+                    justify-content: center;
+                    text-align: center;
+                    padding: 0px;
+                
+                    .card-menu {
+                        border-radius: 5px;
+                        margin-inline: 5px;
+                        background-color: #EAF2FF;
+                        
+                        ion-icon {  
+                            font-size: 45px;
+                            margin-top: 10px;
+                            color: #123167;                 
+                        }     
+
+                        ion-row {
+                            margin: 5px;
+                            justify-content: center;
+                            align-items: center; 
+                            text-align: center;   
+                            display: flex;
+    
+                            .menulbl2 {
+                                font-size: 15px;
+                                margin-bottom: 8px;
+                                font-weight: 200;
+                                justify-content: center;
+                                align-items: center; 
+                                text-align: center;   
+                                display: flex;
+                                color: #123167;
+                            }
+                     
+                        }
+
+                    }
+
+                }
+                           
+            }
+        }
+    }
 }
