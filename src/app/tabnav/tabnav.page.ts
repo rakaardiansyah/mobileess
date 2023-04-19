@@ -7,7 +7,7 @@ import { IonTabs, TabsCustomEvent } from '@ionic/angular';
   styleUrls: ['./tabnav.page.scss'],
 })
 export class TabnavPage implements OnInit {
-  @ViewChild('tabs', { static: false }) tabs: IonTabs | undefined;
+  @ViewChild('tabnav', { static: false }) tabnav: IonTabs | undefined;
   selectedTab: string | undefined;
 
   constructor(
@@ -19,7 +19,7 @@ export class TabnavPage implements OnInit {
   }
 
   setCurrentTab() {
-    this.selectedTab = this.tabs?.getSelected();
+    this.selectedTab = this.tabnav?.getSelected();
     console.log(this.selectedTab);
   }
 
@@ -32,11 +32,12 @@ export class TabnavPage implements OnInit {
       box.style.backgroundColor = 'transparent';
     });
 
-    this.selectedTab = this.tabs?.getSelected();
+    this.selectedTab = this.tabnav?.getSelected();
     const box = document.getElementById(this.selectedTab as string);
+    
     console.log(this.selectedTab);
     if (box != null) {
-      box.style.backgroundColor = '#0EA99B';
+      box.style.backgroundColor = '#123167';
     }
   }
 

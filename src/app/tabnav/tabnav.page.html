@@ -1,36 +1,45 @@
 <ion-content>
   <ion-tabs  #tabs (ionTabsDidChange)="setBoxColor()">
+
     <ion-tab-bar slot="bottom">
+
       <ion-tab-button tab="home">
         <div class="box" id="home">
           <ion-icon name="home"></ion-icon>
           <ion-label>Home</ion-label>
         </div>
       </ion-tab-button>
+      
       <ion-tab-button tab="request">
         <div class="box" id="request">
           <ion-icon name="calendar-outline"></ion-icon>
           <ion-label>Request</ion-label>
         </div>
       </ion-tab-button>
+      
       <ion-tab-button tab="log-book">
         <div class="box" id="log-book">
           <ion-icon name="document-text"></ion-icon>
           <ion-label>Log Book</ion-label>
         </div>
       </ion-tab-button>
+      
       <ion-tab-button tab="transaction">
         <div class="box" id="transaction">
           <ion-icon name="hand-right-outline"></ion-icon>
           <ion-label>Transaction</ion-label>
         </div>
       </ion-tab-button>
+      
       <ion-tab-button tab="account">
         <div class="box" id="account">
           <ion-icon name="person"></ion-icon>
           <ion-label>Account</ion-label>
         </div>
       </ion-tab-button>
+    
     </ion-tab-bar>
+  
   </ion-tabs>
+
 </ion-content>

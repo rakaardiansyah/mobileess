@@ -43,7 +43,7 @@ export class LoginPage implements OnInit {
       return;
     }
 
-    this.router.navigateByUrl('/tabs', {replaceUrl: true});
+    this.router.navigateByUrl('/tabnav', {replaceUrl: true});
     this.isLoading = false;
     this.form.reset();
 

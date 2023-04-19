@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
+import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
+
+  declarations: [HomePage],
   imports: [
     CommonModule,
     FormsModule,
@@ -16,6 +18,7 @@ import { SwiperModule } from 'swiper/angular';
     HomePageRoutingModule,
     SwiperModule
   ],
-  declarations: [HomePage]
+  exports: [HomePage],
 })
+
 export class HomePageModule {}

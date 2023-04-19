@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { TabnavPage } from './tabnav.page';
 
 const routes: Routes = [
@@ -27,6 +26,11 @@ const routes: Routes = [
       {
         path: 'account',
         loadChildren: () => import('../account/account.module').then( m => m.AccountPageModule)
+      },
+      {
+        path: '',
+        redirectTo: '/tabnav/home',
+        pathMatch: 'full'
       }
     ]
   },

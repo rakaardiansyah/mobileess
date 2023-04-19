@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 
-import { IonicModule } from '@ionic/angular';
-
+import { RequestPage } from './request.page';
 import { RequestPageRoutingModule } from './request-routing.module';
 
-import { RequestPage } from './request.page';
-
 @NgModule({
+  declarations: [RequestPage],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     RequestPageRoutingModule
   ],
-  declarations: [RequestPage]
+  exports: [RequestPage],
+
 })
 export class RequestPageModule {}
