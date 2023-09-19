@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
-import { LogBookPage } from './log-book.page';
-import { LogBookPageRoutingModule } from './log-book-routing.module';
+import { LogBookPage } from './logbook.page';
+import { LogBookPageRoutingModule } from './logbook-routing.module';
 
 @NgModule({
   declarations: [LogBookPage],

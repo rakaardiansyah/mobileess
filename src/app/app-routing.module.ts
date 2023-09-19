@@ -35,8 +35,20 @@ const routes: Routes = [
     path: 'tabnav',
     loadChildren: () => import('./tabnav/tabnav.module').then( m => m.TabnavPageModule)
   },
-];
 
+
+  /* TAB 1 : ... */
+
+
+  /* TAB 2 : ... */
+
+
+  /* TAB 3 : ... */
+
+
+  /* TAB 4 : ... */
+
+];
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })

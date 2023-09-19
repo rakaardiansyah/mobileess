@@ -1,10 +1,7 @@
-import { AfterContentChecked, Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
-
-import SwiperCore, { SwiperOptions, Pagination, Autoplay } from 'swiper';
-import { SwiperComponent } from 'swiper/angular';
+import { Component, OnInit } from '@angular/core';
+import { ElementRef, Renderer2 } from '@angular/core';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
 SwiperCore.use([Pagination, Autoplay]);
-
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,12 +13,10 @@ export class HomePage implements OnInit {
   constructor(
     public element: ElementRef,
     public renderer: Renderer2,
-    private router: Router,
    ) {
   }
 
   ngOnInit() {
-
     this.renderer.setStyle(this.element.nativeElement.querySelector('.toolbar'), 'webkitTransition', 'top 700ms');
   }
 

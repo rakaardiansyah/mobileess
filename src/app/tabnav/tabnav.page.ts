@@ -6,7 +6,7 @@ import { IonTabs, TabsCustomEvent } from '@ionic/angular';
   templateUrl: './tabnav.page.html',
   styleUrls: ['./tabnav.page.scss'],
 })
-export class TabnavPage implements OnInit {
+export class TabnavPage {
   @ViewChild('tabnav', { static: false }) tabnav: IonTabs | undefined;
   selectedTab: string | undefined;
 
@@ -14,9 +14,6 @@ export class TabnavPage implements OnInit {
     public element: ElementRef,
     public renderer: Renderer2,
   ) { }
-
-  ngOnInit() {
-  }
 
   setCurrentTab() {
     this.selectedTab = this.tabnav?.getSelected();
@@ -34,7 +31,6 @@ export class TabnavPage implements OnInit {
 
     this.selectedTab = this.tabnav?.getSelected();
     const box = document.getElementById(this.selectedTab as string);
-    
     console.log(this.selectedTab);
     if (box != null) {
       box.style.backgroundColor = '#123167';

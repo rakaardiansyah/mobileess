@@ -16,8 +16,8 @@ const routes: Routes = [
         loadChildren: () => import('../request/request.module').then( m => m.RequestPageModule)
       },
       {
-        path: 'log-book',
-        loadChildren: () => import('../log-book/log-book.module').then( m => m.LogBookPageModule)
+        path: 'logbook',
+        loadChildren: () => import('../logbook/logbook.module').then( m => m.LogBookPageModule)
       },
       {
         path: 'transaction',
