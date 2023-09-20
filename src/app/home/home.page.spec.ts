@@ -3,8 +3,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponentModule } from './explore-container/explore-container.module';
 
-
-
 import { HomePage } from './home.page';
 
 describe('HomePage', () => {
@@ -25,4 +23,4 @@ describe('HomePage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-}
+});
