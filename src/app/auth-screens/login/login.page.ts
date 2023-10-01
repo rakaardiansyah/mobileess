@@ -35,7 +35,7 @@ export class LoginPage implements OnInit {
 
   onLogin() {
 
-    this.router.navigateByUrl('tabnav', { replaceUrl: true });
+    this.router.navigateByUrl('tabs', { replaceUrl: true });
 
     /*
     if(!this.form.valid) {
@@ -43,7 +43,7 @@ export class LoginPage implements OnInit {
       return;
     }
 
-    this.router.navigateByUrl('/tabnav', {replaceUrl: true});
+    this.router.navigateByUrl('/tabs', {replaceUrl: true});
     this.isLoading = false;
     this.form.reset();
 

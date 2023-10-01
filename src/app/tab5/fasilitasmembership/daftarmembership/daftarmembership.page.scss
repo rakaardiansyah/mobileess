@@ -1,0 +1,61 @@
+ion-toolbar {
+    width: 100%;
+    --background: var(--ion-color-primary);
+    color: #fff;
+    font-size: 20px
+}
+
+ion-content {
+    font-family: 'Poppins', sans-serif;
+    --background: #f0f0f2;
+
+    .upperBox{
+        background-color: #fff ;
+        padding: 5px 10px;
+
+        .titleFasilitas{
+            font-size: 16px;
+            margin: 15px 0px;
+            font-weight: bold;
+            justify-content: left;
+            display: flex;
+        }
+
+        .bgOptions{
+            margin: 5px 0px;
+
+            ion-card{
+                width: 315px;
+                height: 150px;
+                justify-content: center;
+                display: flex;
+            }
+        }
+
+        .bgCondition{
+            margin: 0px 0px;
+
+            ion-card{
+                width: 315px;
+                height: 150px;
+                justify-content: center;
+                display: flex;
+            }
+        }
+
+        .bgButton{
+            margin: 20px 0px;
+
+            ion-button {
+                border-radius: 20px;
+                font-size: 14px;
+                // --border-radius: 15px;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--ion-color-primary);
+            font-weight: bold;
+        }
+    }
+}

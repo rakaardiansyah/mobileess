@@ -1,5 +1,6 @@
-ion-content {    
-    background-color: white;      
+ion-content {  
+    font-family: 'Roboto', sans-serif; 
+    --background: #ffffff;  
     ion-label {
         color: var(--ion-color-primary);
     }    

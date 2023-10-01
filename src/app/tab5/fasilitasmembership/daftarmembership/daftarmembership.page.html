@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button color="light"
+      defaultHref="search-chef"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Daftar Pereferral</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="upperBox">
+    <div class="titleFasilitas">
+      <ion-item lines="none">
+        <h3>Syarat & Ketentuan sebagai Mitra Referral</h3>
+      </ion-item>
+    </div>
+
+    <div class="bgOptions">
+      <ion-item lines="none">
+        <ion-text>- Kami tidak memungut imbalan dan pembayaran dalam proses
+        pendaftaran ini</ion-text>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-text>- Akun Mitra Referral anda akan aktif, setelah kami melakukan
+        verifikasi data terlebih dahulu</ion-text>
+      </ion-item>
+    </div>
+
+    <div class="bgOptions">
+      <ion-item lines="none">
+        <ion-text>Luangkan waktu anda untuk membaca terlebih dahulu perjanjian dan
+        ketentuan yang tertuang pada lampiran berikut :</ion-text>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-card>
+          <ion-item lines="none">
+            <!-- TODO: BUAT TANDA TANGAN -->
+          </ion-item>
+        </ion-card>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-text>Foto selfie dengan memegang KTP</ion-text>
+      </ion-item>
+      <ion-item lines="none">
+        <!-- <ion-button (click)="captureImage()">
+          Upload Foto
+          </ion-button> -->
+        <img [src]="clickedImage" />
+      </ion-item>
+      <ion-item lines="none">
+        <ion-button expand="full">
+          <ion-icon lazy="true" slot="start" name="image"></ion-icon>
+          <ion-label slot="end">Upload</ion-label>
+          <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+            accept="image/png, image/jpeg">
+        </ion-button>
+      </ion-item>
+    </div>
+
+    <div class="bgCondition">
+      <ion-item lines="none">
+        <ion-checkbox slot="start" [indeterminate]="false"></ion-checkbox>
+        <ion-text>Dengan ini saya sudah membaca, memahami dan setuju dengan ketentuan terkait
+          Mitra Referral di atas</ion-text>
+      </ion-item>
+    </div>
+
+    <div class="bgButton">
+      <ion-row>
+        <ion-col>
+          <ion-button class="button" expand="block">Daftar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="button" (click)="getBack()" expand="block">Batal</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+
+  </div>
+
+</ion-content>
+
