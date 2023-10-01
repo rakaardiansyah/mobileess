@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.bsi.sahabatemas',
+  appId: 'github/.com/rakaardiansyah',
   appName: 'Mobile ESS',
-  webDir: 'www',
+  webDir: 'rakaardiansyah.my.id/',
   bundledWebRuntime: false,
   plugins:{
     Splashscreen:{
