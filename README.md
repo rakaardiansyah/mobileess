@@ -1,4 +1,4 @@
-Dummy project follows the line of figma's been created.
+Dummy project follows the line of figma's been created(progress).
 
 Install ini dulu :
 
