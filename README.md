@@ -1,3 +1,5 @@
+Dummy project follows the line of figma's been created.
+
 Install ini dulu :
 
 npm install
