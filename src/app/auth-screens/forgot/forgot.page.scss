@@ -1,11 +1,19 @@
 ion-header{
     ion-toolbar {
-        --background: #FAF9F9;
+        --background: #FFFFFF;
     }
     ion-fab-button {
         --border-radius: 10px;
         --box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3), 0px 1px 3px 1px rgba(0,0,0,.15);
         --color: black;
+    }
+    
+}
+ion-content {
+    position: absolute;
+    background-color: white;
+    ion-label {
+        color: var(--ion-color-primary);
     }
     .logo {
         padding-right: 6px;
@@ -15,13 +23,7 @@ ion-header{
             border-radius: 5px;
         }
     }
-}
-ion-content {
-    position: absolute;
-    background-color: white;
-    ion-label {
-        color: var(--ion-color-primary);
-    }
+    
     ion-icon {
         color:#C4C5C5;
         margin-right: 10px;

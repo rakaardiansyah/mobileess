@@ -1,88 +1,17 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Akun</ion-title>
+    <ion-title>
+      Tab 5
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 5</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <div class="profileHeader">
-    <ion-grid [fixed]="true">
-      <ion-row>
-        <ion-col size="4">
-          <div class="image">
-            <img src="../../assets/icon/user.png">
-          </div>
-        </ion-col>
-        <ion-col size="8">
-          <ion-list>
-            <div class="titleName">
-              Raka Ardiansyah
-            </div>
-            <div class="titleEmail">
-              rakadev.project@gmail.com
-            </div>
-            <div class="titleTelp">
-              github.com/rakaardiansyah
-            </div>
-            <ion-button color="primary">Edit</ion-button>
-          </ion-list>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-
-  <div class="upperBox">
-    <ion-list>
-      <ion-item>
-        <ion-icon name="person"></ion-icon>
-        <label (click)="profilesaya()" color="secondary">Profile Saya</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="receipt"></ion-icon>
-        <label (click)="daftartransaksi()" color="secondary">Daftar Transaksi</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="copy"></ion-icon>
-        <label (click)="referralfee()" color="secondary">Referral Fee</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="layers"></ion-icon>
-        <label (click)="fasilitasmembership()" color="secondary">Fasilitas Membership</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="map"></ion-icon>
-        <label>Daftar Alamat</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="document-text"></ion-icon>
-        <label>Syarat & Ketentuan</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="reader"></ion-icon>
-        <label>FAQ</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="rocket"></ion-icon>
-        <label>Versi Aplikasi</label>
-        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
-    </ion-list>
-  </div>
+  <app-explore-container name="Tab 5 page"></app-explore-container>
 </ion-content>
-

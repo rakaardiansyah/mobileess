@@ -27,6 +27,13 @@ const routes: Routes = [
         path: 'tab5',
         loadChildren: () => import('../tab5/tab5.module').then(m => m.Tab5PageModule)
       },
+
+      // PAGE tab1
+     
+
+
+
+
       {
         path: '',
         redirectTo: '/tabs/tab1',
@@ -43,7 +50,5 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  // imports: [RouterModule.forChild(routes)],
 })
 export class TabsPageRoutingModule {}

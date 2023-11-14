@@ -17,9 +17,8 @@ ion-header{
     }
 }
 ion-content {
-    font-family: 'Roboto', sans-serif; 
     position: absolute;
-    --background: #ffffff;
+    background-color: white;
     ion-label {
         color: var(--ion-color-primary);
     }

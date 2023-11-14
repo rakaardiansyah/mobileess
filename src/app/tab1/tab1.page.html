@@ -1,173 +1,174 @@
+<ion-header class="ion-no-border">
+  
+  <div class="header">  
+    <div class="profile">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="3" class="ion-text-left">
+          <img src="../../assets/user.png">
+        </ion-col>
+        <ion-col size="6" class="ion-text-left">
+          <ion-row>
+            <ion-label class="lbl-1">Assalamualaikum,</ion-label>
+          </ion-row>
+          <ion-row>
+            <ion-label class="lbl-2">Raka Ardiansyah</ion-label>
+          </ion-row>
+        </ion-col>
+        <ion-col size="3" class="ion-text-right">
+          <ion-icon name="notifications-sharp"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+</ion-header>
+
 <ion-content>
 
-  <!-- <ion-content [fullscreen]="true"> -->
-
-    <div class="header">  
-      <div class="profile">
-        <ion-row class="ion-align-items-center">
-          <ion-col size="3" class="ion-text-left">
-            <img src="../../assets/icon/user.png">
-          </ion-col>
-          <ion-col size="6" class="ion-text-left">
-            <ion-row>
-              <ion-label class="lbl-1">Hallo,</ion-label>
-            </ion-row>
-            <ion-row>
-              <ion-label class="lbl-2">Raka Ardiansyah</ion-label>
-            </ion-row>
-          </ion-col>
-          <ion-col size="3" class="ion-text-right">
-            <ion-icon name="notifications-sharp"></ion-icon>
-          </ion-col>
-        </ion-row>
-      </div>
+  <ion-card class="clockinout">
+    <div class="attendance">
+      <ion-label class="keterangan1">You haven't clock in today!</ion-label> 
+      <ion-row class="ion-align-items-center">  
+        <ion-col size="6" class="ion-text-center">
+          <ion-button class="clockin" color="text-primary">
+            Clock In                 
+          </ion-button>    
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-button class="clockout" color="text-primary">
+            Clock Out              
+          </ion-button>  
+        </ion-col>
+      </ion-row>
     </div>
-  
-    <ion-card class="clockinout">
-      <div class="attendance">
-        <ion-label class="keterangan1">You haven't clock in today!</ion-label> 
-        <ion-row class="ion-align-items-center">  
-          <ion-col size="6" class="ion-text-center">
-            <ion-button class="clockin" color="text-primary">
-              Clock In                 
-            </ion-button>    
-          </ion-col>
-          <ion-col size="6" class="ion-text-center">
-            <ion-button class="clockout" color="text-primary">
-              Clock Out              
-            </ion-button>  
-          </ion-col>
-        </ion-row>
-      </div>
-    </ion-card>
-  
-  
-    <ion-card class="overview">
-      <div class="ketoverview">
-        <ion-label class="ket1">Attendance Overview (11 Maret 2023)</ion-label> 
-        <ion-row>  
-          <ion-col size="3" class="ion-text-center">
-            <ion-card class="overview-present">
-              <ion-label class="lblpresent1">24</ion-label> 
-              <ion-row>
-                <ion-icon name="calendar-outline"></ion-icon>
-                <ion-label class="lblpresent2">Present</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="3" class="ion-text-center">
-            <ion-card class="overview-halfday">
-              <ion-label class="lblhalfday1">2</ion-label> 
-              <ion-row>
-                <ion-icon name="calendar-outline"></ion-icon>
-                <ion-label class="lblhalfday2">Half Day</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="3" class="ion-text-center">
-            <ion-card class="overview-late">
-              <ion-label class="lbllate1">1</ion-label> 
-              <ion-row>
-                <ion-icon name="calendar-outline"></ion-icon>
-                <ion-label class="lbllate2">Late</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="3" class="ion-text-center">
-            <ion-card class="overview-overtime">
-              <ion-label class="lblovertime1">4</ion-label> 
-              <ion-row>
-                <ion-icon name="calendar-outline"></ion-icon>
-                <ion-label class="lblovertime2">Overtime</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col> 
-        </ion-row>
-      </div>
-    </ion-card>
-  
-    <ion-card class="menus">
-      <div class="menu-all">
-        <ion-label class="menuket">Menu</ion-label> 
-        <ion-row>  
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="clipboard-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Attandance</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="create-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Leave<br>Request</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Medical Request</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-        <ion-row>  
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="list-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Business<br>Trip</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="reader-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Salary<br>Slip</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="checkbox-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Setlement</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-        <ion-row>  
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="calendar-clear-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Leave<br>Balance</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
-              <ion-icon name="medkit-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Medical Balance</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="ion-text-center">
-            <ion-card class="card-menu">
+  </ion-card>
+
+  <ion-card class="overview">
+    <div class="ketoverview">
+      <ion-label class="ket1">Attendance Overview (11 Maret 2023)</ion-label> 
+      <ion-row>  
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="overview-present">
+            <ion-label class="lblpresent1">24</ion-label> 
+            <ion-row>
               <ion-icon name="calendar-outline"></ion-icon>
-              <ion-row>
-                <ion-label class="menulbl2">Schedule Request</ion-label>
-              </ion-row>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </div>
-    </ion-card>
-  
-  </ion-content>
+              <ion-label class="lblpresent2">Present</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="overview-halfday">
+            <ion-label class="lblhalfday1">2</ion-label> 
+            <ion-row>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-label class="lblhalfday2">Half Day</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="overview-late">
+            <ion-label class="lbllate1">1</ion-label> 
+            <ion-row>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-label class="lbllate2">Late</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="3" class="ion-text-center">
+          <ion-card class="overview-overtime">
+            <ion-label class="lblovertime1">4</ion-label> 
+            <ion-row>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-label class="lblovertime2">Overtime</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col> 
+      </ion-row>
+    </div>
+  </ion-card>
+
+  <div class="menus">
+    <div class="menu-all">
+      <ion-label class="menuket">Menu</ion-label> 
+      <ion-row>  
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="clipboard-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Attandance</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="create-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Leave<br>Request</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Medical Request</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>  
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="list-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Business<br>Trip</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="reader-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Salary<br>Slip</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="checkbox-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Setlement</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>  
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="calendar-clear-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Leave<br>Balance</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="medkit-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Medical Balance</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-card class="card-menu">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <ion-row>
+              <ion-label class="menulbl2">Schedule Request</ion-label>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+</ion-content>

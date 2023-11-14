@@ -36,15 +36,6 @@ const routes: Routes = [
       loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
     },
 
-
-    /* TAB 1 : KATEGORI HAJI */
-    
-
-
-    /* TAB 1 : KATEGORI UMRAH */
-    
-    /* VIEWALL */
-    
     
 ];
 @NgModule({
