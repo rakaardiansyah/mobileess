@@ -1,28 +1,23 @@
 <ion-content [fullscreen]="true" class="ion-no-padding">
 
     <div class="icon ion-text-center">
-        <img src="./assets/auth-screens/img_login3.png" />
+        <img src="./assets/auth-screens/thumbnails.png" />
     </div>
 
     <div class="padding">
-        <div class="title">
-            <ion-col class="title">
-                <ion-row class="ion-justify-content-start">
-                    <ion-label class="lbl-1">Periksa email anda</ion-label>
-                </ion-row>
-                <ion-row class="ion-justify-content-start">
+        <div class="bgtitle">
+            <ion-row>
+                <ion-label class="lbl-1">Periksa email anda</ion-label>
+            </ion-row>
+            <ion-row>
                 <ion-label class="lbl-2">
                     Kami telah mengirimkan instruksi pemulihan kata sandi ke email Anda
                 </ion-label>
-                </ion-row>
-            </ion-col>
+            </ion-row>
         </div>
 
         <div class="footer">
-            <ion-button
-                expand="block"
-                color="primary"
-                (click)="onOpen()">
+            <ion-button expand="block" color="primary" (click)="onOpen()">
                 <ion-label>Open Email App</ion-label>
             </ion-button>
             <p class="lbl-3 ion-text-center">

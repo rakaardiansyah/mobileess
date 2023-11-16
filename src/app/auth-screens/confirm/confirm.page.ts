@@ -33,15 +33,15 @@ export class ConfirmPage implements OnInit {
   }
 
   onOpen() {
-    this.router.navigateByUrl('reset', { replaceUrl: true });
+    this.router.navigateByUrl('/reset', { replaceUrl: true });
   }
   
   onSkip() {
-    this.router.navigateByUrl('login', { replaceUrl: true });
+    this.router.navigateByUrl('/login', { replaceUrl: true });
   }
 
   onOther() {
-    this.router.navigateByUrl('forgot', { replaceUrl: true });
+    this.router.navigateByUrl('/forgot', { replaceUrl: true });
   }
 
   async showAlert(message: string) {

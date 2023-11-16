@@ -1,22 +1,28 @@
-ion-content {    
-    background-color: white;      
+ion-content {  
+    font-family: 'Roboto', sans-serif; 
+    --background: #ffffff;  
+
     ion-label {
         color: var(--ion-color-primary);
     }    
+
     ion-icon {
         color:#C4C5C5;
         margin-right: 10px;
     }    
+    
     ion-input, ion-text {
         font-weight: 400;
         font-size: 12px;
     }
+
     ion-item {
         --background: #ECECEC;   
         border-style: none;  
         border-radius: 12px;
         height: 50px;
     }
+
     ion-button {
         padding-top: 0;
         padding-bottom: 0;
@@ -25,30 +31,61 @@ ion-content {
         
         ion-label {
             color: white;
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 500;
+            font-size: 16px;
         }
     }
+
     .padding {
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 10px;        
-    }        
+        padding: 15px 40px; 
+        
+        .bgtitle {
+            padding: 20px 0px;
+
+            ion-row{
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+
+                .lbl-1 {
+                    font-weight: 500;
+                    font-size: 25px;
+                }
+            }
+
+            ion-row{
+                width: 100%;
+                text-align: center;
+                display: flex;
+
+                .lbl-2 {
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+            }
+
+        }
+    }   
+
     .icon {           
         padding-top: 80px;                 
         img {            
             max-height: 165px;        
         }
-    }    
+    }  
+
     .bottom {        
-        position: relative;  
-        display: flex;              
+        justify-content: center;
+        text-align: center;
+        display: flex;            
         bottom:-43px;    
         img {
             width: 100%;
             max-height: 138px;                            
         }            
     }
+
     .lbl-1 {             
         font-weight: 500;
         font-size: 30px;                
@@ -57,16 +94,19 @@ ion-content {
         padding-top: 10px;
         font-weight: 400;
         font-size: 14px;                
-    }    
+    }  
+
     .lbl-3 {                        
         font-weight: 400;
         font-size: 16px;                
-    }    
+    } 
+
     .lbl-4 {                
         padding-top: 60px;
         font-weight: 400;
         font-size: 14px;                
-    }    
+    }  
+
     .error {
         font-size: 0.7rem !important;
     }                

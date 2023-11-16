@@ -1,16 +1,29 @@
-jdlberangkat.page.html
-semualembaga.page
-
-  <!-- TODO://SESUAIKAN DENGAN FIGMA -->
-
-
-
+Install ini dulu :
 
 npm install
 
 npm install -g @ionic/cli@latest
 
 npm install @icon/ionicons
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# app uspps
+Redesign Mobile App Mobile ESS yang di gunakan untuk Absensi karyawan. 
+Flow Mengikuti dari Figma:
+
+https://www.figma.com/file/OHCKywOlaxw1N1sChmqeX2/SAKURA-SYSTEM-ATTENDANCE-(DONE)?type=design&t=qx0rhkMrsEQh7CHt-6
+
+ 
+Image :
+
+![myimage-alt-tag](https://github.com/rakaardiansyah/compro-pthiyokuna/blob/main/image/Untitled1.png)
+![myimage-alt-tag](https://github.com/rakaardiansyah/compro-pthiyokuna/blob/main/image/Untitled2.png)
+
+
 
 
 <!-- <ion-header>

@@ -34,7 +34,7 @@ export class ResetPage implements OnInit {
   }
 
   onReset() {
-    this.router.navigateByUrl('login', { replaceUrl: true });
+    this.router.navigateByUrl('/login', { replaceUrl: true });
   }
 
   async showAlert(message: string) {

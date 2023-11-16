@@ -1,90 +1,62 @@
 <ion-content [fullscreen]="true">
-  <div class="login-image atas">
-    <img src="./assets/auth-screens/img_login3.png" />
-  </div>
-
+  
   <div class="padding">
-    <div class="title">
-      <ion-col>
-        <ion-row class="ion-justify-content-center">
-          <ion-label class="lbl-1">Selamat Datang</ion-label>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-label class="lbl-2">Masuk ke akun anda</ion-label>
-        </ion-row>
-      </ion-col>
-    </div>
-
-    <form [formGroup]="form">
-      <div class="form">
-        <ion-item lines="none">
-          <ion-icon name="mail" slot="start"> </ion-icon>
-          <ion-input
-            formControlName="email"
-            type="text"
-            placeholder="Email"
-          ></ion-input>
-        </ion-item>
-        <ion-text
-          color="danger"
-          *ngIf="!form.get('email')?.valid && form.get('email')?.touched"
-        >
-          <ion-text
-            class="error"
-            *ngIf="form.get('email')?.hasError('required')"
-          >
-            * Please enter email
-          </ion-text>
-        </ion-text>
+      <div class="title">
+          <ion-col>
+              <ion-row class="ion-justify-content-center">
+                  <ion-label class="lbl-1">Login</ion-label>
+              </ion-row>
+              <!-- <ion-row class="ion-justify-content-center">
+                  <ion-label class="lbl-2">Masuk ke akun anda</ion-label>
+              </ion-row> -->
+          </ion-col>
       </div>
-      <div class="ion-margin-vertical">
-        <ion-item lines="none">
-          <ion-icon name="lock-closed" slot="start"> </ion-icon>
-          <ion-icon
-            [name]="type ? 'eye' : 'eye-off'"
-            slot="end"
-            (click)="changeType()"
-          >
-          </ion-icon>
-          <ion-input
-            formControlName="password"
-            [type]="type ? 'password' : 'text'"
-            placeholder="Password"
-          >
-          </ion-input>
-        </ion-item>
-        <ion-text
-          color="danger"
-          *ngIf="!form.get('password')?.valid && form.get('password')?.touched"
-        >
-          <ion-text
-            class="error"
-            *ngIf="form.get('password')?.hasError('required')"
-          >
-            * Please enter your password
-          </ion-text>
-          <ion-text
-            class="error"
-            *ngIf="!form.get('password')?.hasError('required') && form.get('password')?.hasError('minlength')"
-          >
-            * Please enter a password of atleast 8 characters long
-          </ion-text>
-        </ion-text>
-      </div>
-    </form>
 
-    <div class="footer">
-      <p class="ion-text-right">
-        <ion-label class="lbl-3" (click)="onForgot()">Lupa Password?</ion-label>
-      </p>
-      <ion-button expand="block" color="primary" (click)="onLogin()">
-        <ion-label>Log In</ion-label>
-      </ion-button>
-      <p class="ion-text-center">
-        <ion-label class="lbl-4"
-          >Belum punya akun?<b (click)="onSignup()"> Sign Up</b></ion-label
-        >
-      </p>
-    </div>
+      <div class="login-image">
+        <img src="./assets/auth-screens/thumbnails.png" />
+      </div>
+
+      <form [formGroup]="form">
+          <div class="form">
+              <ion-item lines="none">
+                  <ion-icon name="mail" slot="start"> </ion-icon>
+                  <ion-input formControlName="email" type="text" placeholder="Email"></ion-input>
+              </ion-item>
+              <ion-text color="danger" *ngIf="!form.get('email')?.valid && form.get('email')?.touched">
+                  <ion-text class="error" *ngIf="form.get('email')?.hasError('required')">
+                      * Please enter email
+                  </ion-text>
+              </ion-text>
+          </div>
+          <div class="ion-margin-vertical">
+              <ion-item lines="none">
+                  <ion-icon name="lock-closed" slot="start"> </ion-icon>
+                  <ion-icon [name]="type ? 'eye' : 'eye-off'" slot="end" (click)="changeType()">
+                  </ion-icon>
+                  <ion-input formControlName="password" [type]="type ? 'password' : 'text'" placeholder="Password">
+                  </ion-input>
+              </ion-item>
+              <ion-text color="danger" *ngIf="!form.get('password')?.valid && form.get('password')?.touched">
+                  <ion-text class="error" *ngIf="form.get('password')?.hasError('required')">
+                      * Please enter your password
+                  </ion-text>
+                  <ion-text class="error" *ngIf="!form.get('password')?.hasError('required') && form.get('password')?.hasError('minlength')">
+                      * Please enter a password of atleast 8 characters long
+                  </ion-text>
+              </ion-text>
+          </div>
+      </form>
+
+      <div class="footer">
+          <p class="ion-text-right">
+              <ion-label class="lbl-3" (click)="onForgot()">Lupa Password?</ion-label>
+          </p>
+          <ion-button expand="block" color="primary" (click)="onLogin()">
+              <ion-label>Log In</ion-label>
+          </ion-button>
+          <p class="ion-text-center">
+              <ion-label class="lbl-4" (click)="onSignup()">Belum punya akun?<b> Daftar</b></ion-label>
+          </p>
+      </div>
   </div>
 </ion-content>

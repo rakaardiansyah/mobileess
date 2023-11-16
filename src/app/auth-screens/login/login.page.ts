@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
@@ -62,12 +61,12 @@ export class LoginPage implements OnInit {
     */
   }
 
-  onSignup() {
-    this.router.navigateByUrl('signup', { replaceUrl: true });
+  onForgot() {
+    this.router.navigateByUrl('/forgot', { replaceUrl: true });
   }
 
-  onForgot() {
-    this.router.navigateByUrl('forgot', { replaceUrl: true });
+  onSignup() {
+    this.router.navigateByUrl('/signup', { replaceUrl: true });
   }
 
   async showAlert(message: string) {
