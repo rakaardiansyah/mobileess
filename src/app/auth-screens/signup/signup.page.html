@@ -76,86 +76,6 @@
 
             <div class="ion-margin-vertical">
                 <ion-row class="rowtitle">
-                    <ion-label class="lblket">Kepegawaian <b>*</b></ion-label>
-                </ion-row>
-                <div class="bgselect">
-                    <ion-select formControlName="statuspegawai" class="custom-select" placeholder="Kepegawaian">
-                      <ion-select-option value="option1">Pegawai Tetap</ion-select-option>
-                      <ion-select-option value="option2">Pegawai Kontrak</ion-select-option>
-                    </ion-select>
-                  </div>
-                <ion-text color="danger" *ngIf="!form.get('statuspegawai')?.valid && form.get('statuspegawai')?.touched">
-                    <ion-text class="error" *ngIf="form.get('statuspegawai')?.hasError('required')">
-                        * Please select status employee
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Unit Kerja <b>*</b></ion-label>
-                </ion-row>
-                <ion-item lines="none">
-                    <ion-input formControlName="unitkerja" type="text" placeholder="Unit Kerja"></ion-input>
-                </ion-item>
-                <ion-text color="danger" *ngIf="!form.get('unitkerja')?.valid && form.get('unitkerja')?.touched">
-                    <ion-text class="error" *ngIf="form.get('unitkerja')?.hasError('required')">
-                        * Please enter your division employee
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Jabatan <b>*</b></ion-label>
-                </ion-row>
-                <div class="bgselect">
-                    <ion-select formControlName="jabatan" class="custom-select" placeholder="Jabatan">
-                      <ion-select-option value="option1">Entry-level</ion-select-option>
-                      <ion-select-option value="option2">Specialist</ion-select-option>
-                      <ion-select-option value="option3">Supervisory</ion-select-option>
-                      <ion-select-option value="option4">Middle Management</ion-select-option>
-                      <ion-select-option value="option5">Senior Management</ion-select-option>
-                      <ion-select-option value="option6">Executive Leadership</ion-select-option>
-                    </ion-select>
-                  </div>
-                <ion-text color="danger" *ngIf="!form.get('jabatan')?.valid && form.get('jabatan')?.touched">
-                    <ion-text class="error" *ngIf="form.get('jabatan')?.hasError('required')">
-                        * Please select status position employee
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Rekening Payroll<b>*</b></ion-label>
-                </ion-row>
-                <ion-item lines="none">
-                    <ion-input formControlName="rekpayroll" type="number" placeholder="Rekening Payroll"></ion-input>
-                </ion-item>
-                <ion-text color="danger" *ngIf="!form.get('rekpayroll')?.valid && form.get('rekpayroll')?.touched">
-                    <ion-text class="error" *ngIf="form.get('rekpayroll')?.hasError('required')">
-                        * Please enter your rek payroll
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Email Luar<b>*</b></ion-label>
-                </ion-row>
-                <ion-item lines="none">
-                    <ion-input formControlName="emailluar" type="email" placeholder="Email Luar (bukan email Perusahaan)"></ion-input>
-                </ion-item>
-                <ion-text color="danger" *ngIf="!form.get('emailluar')?.valid && form.get('emailluar')?.touched">
-                    <ion-text class="error" *ngIf="form.get('emailluar')?.hasError('required')">
-                        * Please enter your email non-employee
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
                     <ion-label class="lblket">Nomor HP <b>*</b></ion-label>
                 </ion-row>
                 <ion-item lines="none">
@@ -170,71 +90,8 @@
 
             <div class="ion-margin-vertical">
                 <ion-row class="rowtitle">
-                    <ion-label class="lblket">Ex-Legacy <b>*</b></ion-label>
+                    <ion-label class="lblket">Password <b>*</b></ion-label>
                 </ion-row>
-                <div class="bgselect">
-                    <ion-select formControlName="tabexlegacy" class="custom-select" placeholder="Pilih Ex-Legacy">
-                      <ion-select-option value="option1">Ex-Legacy BNIS</ion-select-option>
-                      <ion-select-option value="option2">Ex-Legacy BRIS</ion-select-option>
-                      <ion-select-option value="option3">Ex-Legacy BSM</ion-select-option>
-                    </ion-select>
-                  </div>
-                <ion-text color="danger" *ngIf="!form.get('tabexlegacy')?.valid && form.get('tabexlegacy')?.touched">
-                    <ion-text class="error" *ngIf="form.get('tabexlegacy')?.hasError('required')">
-                        * Please select status position exlegacy
-                    </ion-text>
-                </ion-text>
-            </div>
-
-
-
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Foto KTP (max 1MB) <b>*</b></ion-label>
-                </ion-row>
-                <ion-item lines="none">
-                    <input formControlName="upld_ktp" type="file" (change)="onFileSelected($event)" placeholder="Upload KTP" />
-                </ion-item>
-                <ion-text color="danger" *ngIf="!form.get('upld_ktp')?.valid && form.get('upld_ktp')?.touched">
-                    <ion-text class="error" *ngIf="form.get('upld_ktp')?.hasError('required')">
-                        * Please enter your image KTP
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Foto ID Card (max 1MB) <b>*</b></ion-label>
-                </ion-row>
-                <ion-item lines="none">
-                    <input formControlName="upld_idcard" type="file" (change)="onFileSelected($event)" placeholder="Upload ID Card" />
-                </ion-item>
-                <ion-text color="danger" *ngIf="!form.get('upld_idcard')?.valid && form.get('upld_idcard')?.touched">
-                    <ion-text class="error" *ngIf="form.get('upld_idcard')?.hasError('required')">
-                        * Please enter your ID Card
-                    </ion-text>
-                </ion-text>
-            </div>
-
-            <div class="ion-margin-vertical">
-                <ion-row class="rowtitle">
-                    <ion-label class="lblket">Foto Slip Gaji (max 1MB) <b>*</b></ion-label>
-                </ion-row>
-                <ion-item lines="none">
-                    <input formControlName="upld_slipgaji" type="file" (change)="onFileSelected($event)" placeholder="Upload Slip Gaji" />
-                </ion-item>
-                <ion-text color="danger" *ngIf="!form.get('upld_slipgaji')?.valid && form.get('upld_slipgaji')?.touched">
-                    <ion-text class="error" *ngIf="form.get('upld_slipgaji')?.hasError('required')">
-                        * Please enter your document salary 
-                    </ion-text>
-                </ion-text>
-            </div>
-
-
-
-
-            <!-- <div class="ion-margin-vertical">
                 <ion-item lines="none">
                     <ion-icon name="lock-closed" slot="start">
                     </ion-icon>
@@ -254,6 +111,9 @@
             </div>
 
             <div class="ion-margin-vertical">
+                <ion-row class="rowtitle">
+                    <ion-label class="lblket">Confirm Password<b>*</b></ion-label>
+                </ion-row>
                 <ion-item lines="none">
                     <ion-icon name="lock-closed" slot="start">
                     </ion-icon>
@@ -270,31 +130,15 @@
                         * Please enter a confirm password of atleast 8 characters long
                     </ion-text>
                 </ion-text>
-            </div> -->
+            </div>
 
         </form>
-
-        <div class="bgdesc">
-            <ion-row>
-                <ion-icon name="checkmark"></ion-icon>
-                <ion-label class="desc1">Iuran Pokok Rp. 500.000 diangsur 10 kali</ion-label>
-            </ion-row>  
-            <ion-row>
-                <ion-icon name="checkmark"></ion-icon>
-                <ion-label class="desc1">Iuran Wajib Rp. 50.000 dibayar setiap bulan</ion-label>
-            </ion-row> 
-        </div>
 
         <div class="termsncondit">
             <div class="custom-checkbox" (click)="toggleCheckbox()">
                 <input type="checkbox" [checked]="isChecked" />
                 <label>{{ checkboxLabel }}</label>
             </div>     
-
-            <div class="custom-checkbox2" (click)="toggleCheckbox()">
-                <input type="checkbox" [checked]="isChecked" />
-                <label>{{ checkboxLabel2 }}</label>
-            </div> 
         </div>
 
 

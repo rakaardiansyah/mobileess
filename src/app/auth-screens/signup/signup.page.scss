@@ -114,30 +114,6 @@ ion-content {
 
     }
 
-    .bgdesc{
-        margin: 10px 0px;
-        padding: 15px 20px;
-        flex-direction: column;
-        border: 1px solid var(--Gray1, #709be6);
-        background: var(--Gray1, #709be6);  
-        
-        ion-row{
-            height: 20px;
-            padding: 5px 0px;
-
-                ion-icon {
-                    color:#ffffff;
-                    margin-right: 10px;
-                }
-
-                .desc1{
-                    color: #ffffff;    
-                    font-size: x-small;        
-                }
-        }
-     
-    }
-
     .termsncondit{
         padding-top: 5px;
         padding-bottom: 15px;
