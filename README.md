@@ -11,17 +11,16 @@ npm install @icon/ionicons
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 
-# app uspps
+# app mobile ess
 Redesign Mobile App Mobile ESS yang di gunakan untuk Absensi karyawan. 
 Flow Mengikuti dari Figma:
 
-https://www.figma.com/file/OHCKywOlaxw1N1sChmqeX2/SAKURA-SYSTEM-ATTENDANCE-(DONE)?type=design&t=qx0rhkMrsEQh7CHt-6
+https://www.figma.com/file/rAfLPqRmJVMCbmtXCdEPy9/REBORN-Mobile-ESS-(Progress)?type=design&t=64I9my7W1kXxOjJj-6
 
  
 Image :
 
-![myimage-alt-tag](https://github.com/rakaardiansyah/compro-pthiyokuna/blob/main/image/Untitled1.png)
-![myimage-alt-tag](https://github.com/rakaardiansyah/compro-pthiyokuna/blob/main/image/Untitled2.png)
+![myimage-alt-tag](https://github.com/rakaardiansyah/mobileess/blob/master/image/Untitled1.png)
 
 
 
