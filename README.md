@@ -15,7 +15,7 @@ npm install @icon/ionicons
 Redesign Mobile App Mobile ESS yang di gunakan untuk Absensi karyawan. 
 Flow Mengikuti dari Figma:
 
-https://www.figma.com/file/rAfLPqRmJVMCbmtXCdEPy9/REBORN-Mobile-ESS-(Progress)?type=design&t=64I9my7W1kXxOjJj-6
+https://www.figma.com/file/
 
  
 Image :
